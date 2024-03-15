@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/main.css">
+</head>
+<body class="main">
+    <form action="" class="form" onsubmit="submitHandler(event)">
+        <h2>Player Information</h2>
+
+        <label for="" >Name:
+            <input type="text" name="name" id="name">
+        </label>
+
+        <label for="">Date of Birth:
+            <input type="date" name="dob" id="dob">
+        </label>
+
+        <label for="">Photo URL:
+            <input type="url" name="url" id="url">
+        </label>
+
+        <label for="">Birthplace:
+            <input type="text" name="birthplace" id="birthplace">
+        </label>
+
+        <label for="">Career:
+            <textarea name="career" id="career" cols="30" rows="10"></textarea>
+        </label>
+
+
+        <label for="">Number of Matches:
+            <input type="number" name="numMatches" id="numMatches">
+        </label>
+
+        <label for="">Score:
+            <input type="number" name="score" id="score">
+        </label>
+
+        <label for="">Fifties:
+            <input type="number" name="fifties" id="fifties">
+        </label>
+
+        <label for="">Centuries:
+            <input type="number" name="centuries" id="centuries">
+        </label>
+
+        <label for="">Wicket:
+            <input type="number" name="wicket" id="wicket">
+        </label>
+
+        <label for="">Average:
+            <input type="number" name="average" id="average">
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <form action="" onsubmit="searchHandler(event)">
+        <input type="text" id="searchdata">
+        <button type="submit">Search</button>
+    </form>
+
+    <div id="showDiv" style="display: none;">
+
+        <button id="btn" onclick="editfun()">Edit Player</button>
+        <div>
+            <div>
+               <img src="" alt="" id="playerImg">
+               <p id="playerName"></p>
+               <p id="playerDob"></p>
+            </div>
+
+            <div>
+                <h3>Personal Information</h3>
+                <p>No. of Matches: <span id="m"></span></p>
+                <p>Runs: <span id="r"></span></p>
+                <p>No. of fifties: <span id="f"></span></p>
+                <p>No. of centuries :<span id="c"></span></p>
+            </div>
+        </div>
+
+        <div>
+            <div id="description"></div>
+        </div>
+
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
+    <script src="../public/js.js"> </script>
+</body>
+</html>

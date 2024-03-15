@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    background-color: aqua;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.active{
+    display: block;
+}
